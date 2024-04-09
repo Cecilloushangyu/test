@@ -1,0 +1,54 @@
+﻿#pragma once
+#include "ks_datatypes.h"
+
+const DOUBLE LIGHTSPEED = 299792458.0;                      //!< 光速
+const DOUBLE GPS_L1CA_WAVELENGTH = 0.19029367279836488;     //!< 频率1575.42MHz
+const DOUBLE GPS_L2_WAVELENGTH = 0.24421021342456826;       //!< 频率1227.60MHz
+const DOUBLE GPS_L5_WAVELENGTH = 0.25482804879085384;       //!< 频率1176.45MHz
+const DOUBLE BDS_B1I_WAVELENGTH = 0.19203948631027648;      //!< 频率1561.098MHz
+const DOUBLE BDS_B2I_WAVELENGTH = 0.24834936958430671;      //!< 频率1207.14MHz
+const DOUBLE BDS_B3IQ_WAVELENGTH = 0.23633246460442090;     //!< 频率1268.52M
+const DOUBLE BDS_B2a_WAVELENGTH = 0.25482804879085384;        //!< 频率与L5相同
+const DOUBLE BDS_B2b_WAVELENGTH = 0.24834936958430671;      	//!< 频率与B2I相同
+const DOUBLE BDS_B1C_WAVELENGTH = 0.19029367279836488;	    //!< 频率与L1CA相同
+const DOUBLE BDS_B1A_DOWN_WAVELENGTH = 0.19203948631027648;	//!< 单边带BOC(14,2)取下边带，与B1I相同
+const DOUBLE BDS_B1A_DET_WAVELENGTH = 0.19029367279836488;  //!< DET模式下与L1CA相同
+const DOUBLE BDS_B3A_WAVELENGTH = 0.23633246460442090;	    //!< 与B3IQ相同
+const DOUBLE GAL_E1_WAVELENGTH = 0.19029367279836488;       //!< 频率与L1CA相同
+const DOUBLE GAL_E5a_WAVELENGTH = 0.25482804879085384;        //!< 频率与L5相同
+const DOUBLE GAL_E5b_WAVELENGTH = 0.24834936958430671;       //!< 频率与B2I相同
+const DOUBLE QZSS_L1CA_WAVELENGTH = 0.19029367279836488;    //!< 频率与L1CA相同
+const DOUBLE QZSS_L2C_WAVELENGTH = 0.24421021342456826;       //!< 频率与L2C相同
+const DOUBLE QZSS_L5_WAVELENGTH = 0.25482804879085384;       //!< 频率与L5相同
+
+const DOUBLE PI = 3.1415926535897932;                 //!< 圆周率
+const DOUBLE RAD2DEG = 180.0 / 3.1415926535897932;                    //!< 弧度角度变换
+const DOUBLE DEG2RAD = 3.1415926535897932 / 180.0;                    //!< 角度弧度变换
+
+ /**
+   * @name GPS WGS84坐标系常数
+  */
+const DOUBLE WGS_AXIS_A = 6378137.0;				    //!< A - WGS-84半长轴
+const DOUBLE WGS_AXIS_B = 6356752.3142451795;		    //!< B - WGS-84半短轴
+const DOUBLE WGS_E1_SQR = 0.006694379990141317;	    //!< 1-(B/A)^2
+const DOUBLE WGS_E2_SQR = 0.006739496742276435;	    //!< (A/B)^2-1
+const DOUBLE WGS_SQRT_GM = 19964981.8432173887;		//!< GM平方根
+const DOUBLE WGS_OMEGDOTE = 7.2921151467e-5;			//!< 地球自转角速度
+const DOUBLE WGS_F_GTR = -4.442807633e-10;		    //!< 相对论常数
+
+
+  /**
+   * @name GLS PZ90坐标系常数
+  */
+const DOUBLE PZ90_AE = 6378136.0;				        //!< PZ90 Ae
+const DOUBLE PZ90_AE2 = 6378136.0 * 6378136.0;		    //!< PZ90 Ae^2
+const DOUBLE PZ90_GM = 3.9860044e+14;			        //!< PZ90重力常数
+const DOUBLE PZ90_C20 = 1082.63e-6;				    //!< 第二球面谐波扩展的纬向系数（Second zonal coefficient of spherical harmonic expansion）
+const DOUBLE PZ90_C20AE2 = (1082.63e-6) * (1082.63e-6);	    //!< PZ90_C20和PZ90_AE2的乘积
+const DOUBLE PZ90_OMEGDOTE = 7.292115e-5;				//!< 地球自转角速度
+
+  /**
+   * @name BDS CGS2000坐标系常数
+  */
+const DOUBLE CGS2000_SQRT_GM = 19964980.3856652962;	//!< GM平方根
+const DOUBLE CGS2000_OMEGDOTE = 7.292115e-5;			//!< 地球自转角速度

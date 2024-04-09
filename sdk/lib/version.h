@@ -1,0 +1,4 @@
+#define SDK_VERSION "2.1.13"
+#define SDK_IS_RELEASE_VERSION 1
+#define FW_SVN_REV "2332"
+#define PLATFORM_SVN_REV "2335"
